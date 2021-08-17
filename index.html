@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task1</title>
+    <style>
+        *{
+            box-sizing:border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        .main-wrapper{
+            width:100%;
+            height:100vh;
+            display:flex;
+            justify-content: center;
+            align-items:center;
+        }
+        .container{
+            background-color: #fff;
+            width:30%;
+            min-width:300px;
+            border-radius:8px;
+            height:80vh;
+            box-shadow: 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+        .heading{
+            border-bottom:1px solid rgb(196, 194, 194);
+        }
+        h1,.p1{
+            padding-left:10px;
+            line-height:7px;
+        }
+        .sign-up-heading{
+            font-size:27px;
+        }
+        .p1{
+            color:grey;
+            font-size:13px;
+        }
+       
+        form{
+            margin:15px;
+        }
+        .form-row-1{
+            display:flex;
+            justify-content:space-between;
+        }
+       .first-row{
+           width:48%;
+           height:40px;
+       }
+       .second-row,.third-row{
+           width:100%;
+           height:40px;
+       }
+       input{
+           background-color: #F5F6F7;
+           border:1px solid #CCD0D5;
+           border-radius:5px;
+           padding-left:10px;
+           margin-bottom: 10px;
+       }
+       /* foruth row */
+       .fourth-row{
+           margin-bottom:8px;
+           display:flex;
+           justify-content:space-between;
+       }
+       .date{
+           color:rgb(94, 92, 92);
+           width:30%;
+           height:35px;
+           border-radius:5px;
+           border:1px solid #CCD0D5;
+           padding-left:10px;
+    }
+    /* fifth-row */
+    .fifth-row{
+        display:flex;
+        justify-content:space-between;
+    }
+    .gender{
+        border:2px solid red;
+        padding-left:10px;
+        border-radius:5px;
+        width:30%;
+        border:1px solid #CCD0D5;
+        height:35px;
+        font-size:13px;
+        color:rgb(85, 83, 83);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+    }
+    .gen{
+        border:1px solid black;
+        margin-top:10px;
+    }
+     /* fifth row end */
+    .label{
+        font-size:12px;
+        color:rgb(107, 107, 107);
+    }
+    .terms-condition{
+         font-size:12px;
+         color:grey;
+    }
+    a{
+        color:#657EAF;
+        text-decoration: none;
+    }
+    a:hover{
+        border-bottom: 1px solid blue;
+    }
+    .row-button{
+        display:flex;
+        justify-content:center;
+    }
+    button{
+        height:30px;
+        width:180px;
+        background-color: #00A400;
+        color:white;
+        border-radius:5px;
+        border:1px solid #00A400;
+        font-weight: 900px;
+        font-size: 17px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main-wrapper">
+        <div class="container">
+            <div class="heading">
+                <h1 class="sign-up-heading">Sign Up</h1>
+                <p class="p1">its quick and easy</p>
+            </div>
+            <form action="#">
+                <div class="form-row-1">
+                    <input type="text" name="first name" placeholder="First name" class="first-row" >
+                    <input type="text" name="surname" placeholder="Surname" class="first-row">
+                </div> 
+               <input type="text" name="mobile" placeholder="Mobile number or email address" class="second-row" >  
+               <input type="password" name="password" placeholder="New password" class="third-row">  <br>
+              <label class="label"> Date of Birth</label> <br>
+              <div class="fourth-row">
+                   <!-- for day -->
+                <select  name="day" class="date"> 
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                    <option value="11">11</option>
+                    <option value="12">12</option>
+                </select>
+                <!-- for month -->
+              <select name="month" class="date">
+                <option value="jan">Jan</option>
+                <option value="feb">Feb</option>
+                <option value="march">March</option>
+                <option value="april">April</option>
+                <option value="jun">Jun</option>
+                <option value="july">July</option>
+                <option value="aug">Aug</option>
+                <option value="sep">Sep</option>
+                <option value="oct">Oct</option>
+                <option value="nav">Nav</option>
+                <option value="dec">Dec</option>
+            </select>
+            <select name="year"  class="date">
+                <option value="2021">2021</option>
+                <option value="2020">2020</option>
+                <option value="2019">2019</option>
+                <option value="2018">2018</option>
+                <option value="2017">2017</option>
+                <option value="2016">2016</option>
+                <option value="2015">2015</option>
+                <option value="2014">2014</option>
+                <option value="2013">2013</option>
+                <option value="2012">2012</option>
+                <option value="2011">2011</option>
+                <option value="2010">2010</option>
+            </select>
+              </div> 
+              <label class="label">Gender</label><br>
+              <div class="fifth-row">
+                  <div class="gender">
+                    <label >Female</label >
+                    <input type="radio" name="gender" value="female" class="gen">
+                  </div>
+                  <div class="gender">
+                    <label >Male</label>
+                    <input type="radio" name="gender" value="male"
+                    class="gen">
+                  </div>
+                  <div class="gender">
+                    <label >Custom</label>
+                    <input type="radio" name=" gender" value="custom"
+                    class="gen">
+                  </div>
+              </div>
+              <div class="sixth-row">
+                  <p class="terms-condition">
+                    By clicking Sign Up, you agree to our <a href="#">Terms</a>, <a href="#">Data Policy </a> and <a href="#">Cookie Policy </a>. You may receive SMS notifications from us and can opt out at any time.
+                  </p>
+              </div>
+              <div class="row-button">
+                <button>Sign Up</button>
+              </div>
+             
+            </form>
+          </div>
+    </div>
+     
+</body>
+</html>
